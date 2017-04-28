@@ -8,21 +8,21 @@ version = "1.0.0">
 <name> app4 Datos del Dispositivo </name>
 
 <description>
-Apliacacion que muestra los Datos del Dispositivo
+Aplicacion que muestra los Datos del Dispositivo
 </description>
 
 <author href="https://build.phonegap.com" email="linkdrack@gmail.com">
 William Paul Corona Cano 4G
 </author>
 
-<!-- Personaliza la aplicación y plataforma -->
-<preference name="orientation"    value="default"/>
-<!-- <preference name="orientation" value="portrait" />
-<preference name="orientation" value="landscape" /> -->
-<preference name="target-device" value="universal" />
-<preference name="fullscreen" value="true" />
-<preference name="android-installLocation" value="auto"/>
-<preference name="permissions" value="INTERNET" />
+<!--Personaliza la aplicacion y plataforma -->
+<preference name="orientation"  value="default"/>
+<!--<preference name="orientation"  value="portrait"/>
+<preference name="orientation"  value="landscape"/> -->
+<preference name="target-device"  value="universal" />
+<preference name="fullscreen"  value="true" />
+<preference name="android-installLocation"  value="auto"/>
+<preference name="permissions"  value="INTERNET"/>
 
 <!--Plugins-->
 <!--Core plugins-->
@@ -30,12 +30,18 @@ William Paul Corona Cano 4G
 <plugin name="cordova-plugin-vibration" spec="~2.1.3"/>
 <plugin name="cordova-plugin-dialogs" spec="~1.3.1"/>
 
-<!-- <plugin name="cordova-plugin-geolocation" source="npm"/> -->
-<!-- Third party plugins -->
+<!--<plugin name="cordova-plugin-geolocation" source="npm" /> -->
+<!--Third part plugins -->
 
-<!-- Colocar icono app-->
+<!--Para accesar a paginas en internet -->
+<allow-intent href="https://*/*"/>
+<acces origin="https://*/*"/>
+<allow-intent href="http://*/*"/>
+<acces origin="http://*/*"/>
+<plugin name="cordova-plugin-whitelist" source="npm"/>
+<!-- Colocar icono app -->
 
 <icon src="res/android/mdpi.png"/>
 
-</widget> 
+</widget>
 
